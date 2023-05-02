@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>होम || हॅन्डमेड मसाले</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>marathi-project</title>
+    <link rel="stylesheet" href="mar-style.css">
+    <link rel="stylesheet" href="mar-media.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/60e6b0cb5e.js" crossorigin="anonymous"></script>
+
+    <!-- crousal script=> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
+    <!-- <=end -->
+
+
+</head>
+
+<body>
+    <div class="header">
+
+        <div class="nav">
+            <i class="fa-solid fa-bars menu" onclick="openmenu()"></i>
+            <a href="होम.html" class="logo"><img src="HEADER_LOGO.png"></a>
+            <div class="form ">
+                <p class="form-p">संत कृपा महिला गृह उद्योग | परंपरा पारंपारिक चवीची १९९९ सालापासून</p>
+                <div class="wrap-contetn">
+                    <div class="lang-content" onclick="opendrop()">
+                        <p class="p-lang">भाषा <i class="fa-solid fa-angle-down social-arrow" id="social-btn"></i>
+                        </p>
+
+                    </div>
+                    <div class="l-wrap" id="lang-wrap">
+                        <div class="m-wrap">
+                            <a href="होम.html">मराठी</a>
+                            <hr>
+                            <a href="index.html">English</a>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- <=end -->
+
+                <!-- dropdown section for mobile screen 600px=>  -->
+                <div class="wrap-contetn-a wrap-moblie-a">
+                    <div class="lang-content-a" id="toggle-a" onclick="openMenu()">
+                        <p class="p-lang-a"><i class="fa-solid fa-globe"></i> <i
+                                class="fa-solid fa-angle-down social-arrow-a" id="social-btn-a"></i>
+                        </p>
+                    </div>
+                    <div class="l-wrap-a" id="lang-wrap-a">
+                        <div class="m-wrap-a">
+                            <a href="होम.html">मराठी</a>
+                            <hr>
+                            <a href="index.html">English</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <=end -->
+
+
+
+
+            </div>
+        </div>
+
+        <div class="nav2">
+            <ul>
+                <!-- <li><a href="अबाऊट.html">अबाऊट अस</a></li> -->
+                <li class="about-c"><a href="#">अबाऊट अस <i class="fa-solid fa-angle-down up-arrow"></i></a>
+                    <ul class="a-content">
+                        <div class="a-item">
+                            <li class="about-i">
+                                <a href="अबाऊट.html" class="a-anchor">अबाऊट अस </a>
+                            </li>
+                            <hr>
+                            <li class="about-i">
+                                <a href="फ्रॅंचायझी.html" class="a-anchor">मॅनेजमेंट</a>
+                            </li>
+                            <hr>
+                            <li class="about-i">
+                                <a href="मिशनआणिविझन.html" class="a-anchor">मिशन आणि विझन</a>
+                            </li>
+                        </div>
+                    </ul>
+                </li>
+                <li><a href="प्रॉडक्ट्स.html">प्रॉडक्ट्स </a></li>
+                <li><a href="स्टोर.html">स्टोर</a></li>
+                <li><a href="मीडिया.html">मीडिया </a></li>
+                <li><a href="फ्रॅंचायझी.html">फ्रॅंचायझी</a></li>
+                <li><a href="कॉन्टॅक्ट.html">कॉन्टॅक्ट अस</a></li>
+            </ul>
+        </div>
+
+        <div class="nav3" id="navlist">
+            <i class="fa-solid fa-xmark cross-icon" onclick="closemenu()"></i>
+            <ul>
+                <!-- <li><a href="अबाऊट.html">अबाऊट अस</a></li> -->
+                <li><a href="#" id="about-drop">अबाऊट अस <i class="fa-solid fa-angle-down up-arrow"
+                            id="up-arrow"></i></a>
+
+                    <ul class="ab-wrap" id="ab-wrap">
+                        <!-- <div class="abt-wrap"> -->
+                        <li><a href="अबाऊट.html" class="">अबाऊट अस</a></li>
+                       <li><a href="मॅनेजमेंट.html" class="a-anchor">मॅनेजमेंट</a></li>
+                        <!-- <hr class="ab-hr" > -->
+                        <li class="b-bottom"><a href="मिशनआणिविझन.html">मिशन आणि विझन</a> </li>
+                        <!-- </div> -->
+                    </ul>
+
+                </li>
+                <li><a href="प्रॉडक्ट्स.html">प्रॉडक्ट्स </a></li>
+                <li><a href="स्टोर.html">स्टोर</a></li>
+                <li><a href="मीडिया.html">मीडिया </a></li>
+                <li><a href="फ्रॅंचायझी.html">फ्रॅंचायझी</a></li>
+                <li><a href="कॉन्टॅक्ट.html">कॉन्टॅक्ट अस</a></li>
+            </ul>
+
+        </div>
+
+        <div class="slider">
+
+
+
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+
+
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+
+
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                        aria-label="Slide 6"></button>
+
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
+                        aria-label="Slide 7"></button>
+
+
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="slider-1.jpg" class="d-block w-100 " alt="...">
+                        <!-- <img src="1-4000.jpg" class="d-block w-100 h-100" alt="..."> -->
+                        <!-- <div class="container"> -->
+                        <div class="carousel-caption d-none d-md-block fist-slide-text">
+                            <h5>परंपरा पारंपारिक <br> चवीची १९९९ सालापासून</h5>
+                        </div>
+                        <div class="shop-box">
+                            <button class="shop-btn btn-background-circle">
+                                <a href="#">Shop Now</a>
+                            </button>
+                        </div>
+                        <!-- </div> -->
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="9 (1).jpg" class="d-block w-100 " alt="...">
+                        <div class="carousel-caption d-none d-md-block Second-slide-text">
+                            <!-- <h5>True rural taste that<br> LINGERS ON YOUR TASTE BUDS</h5> -->
+                        </div>
+                        <div class="shop-box">
+                            <button class="shop-btn btn-background-circle">
+                                <a href="#">Shop Now</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <!-- <img src="10.jpg" class="d-block w-100 h-100" alt="..."> -->
+                        <img src="slider-09.jpg" class="d-block w-100 " alt="...">
+                        <div class="carousel-caption d-none d-md-block third-slide-text">
+                            <!-- <h5 class="third-h5">HAND CRAFTED Spices <br>with No Chemicals<br> and preservatives</h5> -->
+                        </div>
+                        <div class="shop-box">
+                            <button class="shop-btn btn-background-circle">
+                                <a href="#">Shop Now</a>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="sd-11.jpg" class="d-block w-100 " alt="...">
+
+                        <div class="carousel-caption d-none d-md-block">
+                            <!-- <h5>Third slide label</h5> -->
+                        </div>
+                        <div class="shop-box">
+                            <button class="shop-btn btn-background-circle">
+                                <a href="#">Shop Now</a>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <!-- <img src="12.jpg" class="d-block w-100 h-100" alt="..."> -->
+                        <img src="slider-14.jpg" class="d-block w-100 " alt="...">
+                        <div class="carousel-caption d-none d-md-block fifth-slide-text">
+                            <!-- <h5>BEST EXTRACTED<br>OIL AND GHEE</h5> -->
+                        </div>
+                        <div class="shop-box">
+                            <button class="shop-btn btn-background-circle">
+                                <a href="#">Shop Now</a>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <!-- <img src="15.jpg" class="d-block w-100 h-100" alt="..."> -->
+                        <img src="slider-13.jpg" class="d-block w-100 " alt="...">
+                        <div class="carousel-caption d-none d-md-block six-slide-text">
+                            <!-- <h5>PURE HONEY<br>Ayurvedik and more<br> useful for lifestyle </h5> -->
+                        </div>
+                        <div class="shop-box">
+                            <button class="shop-btn btn-background-circle">
+                                <a href="#">Shop Now</a>
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="14 (1).jpg" class="d-block w-100 " alt="...">
+                        <div class="carousel-caption d-none d-md-block seven-slide-text">
+                            <!-- <h5>BEST QUALITY LADOOS <BR>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; FROM PURE DESI GHEE</h5> -->
+                        </div>
+                        <div class="shop-box">
+                            <button class="shop-btn btn-background-circle">
+                                <a href="#">Shop Now</a>
+                            </button>
+                        </div>
+                    </div>
+
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+    <div class="tittle-text">
+        <h1>हॅन्डमेड मसाले मध्ये आपले स्वागत आहे</h1>
+    </div>
+    <div class="container para">
+        <p>भारतामध्ये मसाल्यांचा दीर्घ आणि प्राचीन इतिहास आहे, आणि ते भारतीय जीवनाचा आणि परंपरेचा महत्वाचा भाग आहेत.
+            प्रत्येक घरामध्ये आणि देशभरातील प्रत्येक प्रांतात, स्वयंपाक करताना वेगवेगळे मसाले आणि मिश्रण वापरून
+            स्वयंपाकात वेगळी आणि विशिष्ट चव निर्माण केली जाते. दैनंदिन स्वयंपाकामध्ये मसाल्यांचा वापर त्यामधील औषधी
+            गुणधर्मांमुळे म्हणून देखील करण्यात येतो. भारतात गृहिणी त्यांचे मसाले घरीच हाताने दळत आणि स्वयंपाकात
+            वापरण्यासाठी स्वतःचे मिश्रण बनवत. जसजशी वर्ष उलटली तसतसे हाताने बनवलेली चव फारच दुर्मिळ झाली. ती चव पुन्हा
+            एकदा आणण्यासाठी 'संत कृपा महिला उद्योग' ने ब्रँड हॅण्डमेड मसाले अंतर्गत हाताने बनवलेले मसाले, लोणचे, चटण्या
+            आणि बरेच काही ही संकल्पना साकार केली.</p>
+        <p>
+            संत कृपा महिला गृह उद्योग येथे आम्ही सर्व काही पारंपरिक पद्धतीने हाताने बनवतो, त्यात कोणतेही रासायनिक द्रव्य
+            तसेच कोणत्याही प्रकारचे प्रायोगिक रंग न वापरता प्रत्येक पदार्थ चविष्ठ बनवतो. आम्ही १९९९ पासून मसाल्याच्या
+            निमिर्तीत आहोत. आजवरच्या आमच्या प्रवासात आम्ही मसाले, लोणची चटण्या, लाडू, मध, घाण्यावरील तेलं, वाळवणीचे
+            पदार्थ, सर्व प्रकारची पीठे ग्राहकांसाठी तयार करीत आहोत. आज आमची महाराष्ट्रात ८० हून अधिक केंद्रे असून आणि २
+            भव्य उत्पादन दर्शित दुकाने आहेत. हँडमेड मसाले हा महाराष्ट्रातील लोकांच्या आवडीचा एक
+
+            प्रसिद्ध ब्रँड बनत आहे.
+        </p>
+    </div>
+
+    <div class="second-section">
+        <div class="container">
+            <div class="work-list">
+                <div class="work">
+                    <img src="3.jpg" alt="">
+                    <div class="layer">
+                        <!-- <p class="para1">मसाले</p> -->
+                        <a href="https://handmademasale.com/" class="para1">मसाले</a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="5.jpg" alt="">
+                    <div class="layer">
+                        <!-- <p class="para1">लोणची</p> -->
+                        <a href="https://handmademasale.com/" class="para1">लोणची</a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="4.jpg" alt="">
+                    <div class="layer">
+                        <!-- <p class="para1">चटणी</p> -->
+                        <a href="https://handmademasale.com/" class="para1">चटणी</a>
+                    </div>
+                </div>
+
+
+                <div class="work">
+                    <img src="7.jpg" alt="">
+                    <div class="layer">
+                        <!-- <p class="para1">लाडू</p> -->
+                        <a href="https://handmademasale.com/" class="para1">लाडू</a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="8.jpg" alt="">
+                    <div class="layer">
+                        <!-- <p class="para1">पीठं</p> -->
+                        <a href="https://handmademasale.com/" class="para1">पीठं</a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="2.jpg" alt="">
+                    <div class="layer">
+                        <!-- <p class="para1">पापड व इतर पदार्थ</p> -->
+                        <a href="https://handmademasale.com/" class="para1">पापड व इतर पदार्थ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tittle-text">
+        <h1>लोकांच्या प्रतिक्रिया</h1>
+    </div>
+
+    <div class="container">
+
+
+        <section id="testimonial_area" class="section_padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="testmonial_slider_area text-center owl-carousel">
+
+
+                            <div class="box-area">
+                                <!-- <video controls autoplay muted>
+                                    <source src="video.mp4" type="video/mp4">
+                                </video> -->
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/bFgIVyHQMU8"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+
+
+                            <div class="box-area">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/AkUz4z5e0Jc"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+
+                            <div class="box-area">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/SVRGtzSj7uM"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <div class="box-area">
+                                <!-- <video controls autoplay muted>
+                                    <source src="video.mp4" type="video/mp4">
+                                </video> -->
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/bFgIVyHQMU8"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+
+
+                            <div class="box-area">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/AkUz4z5e0Jc"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+
+                            <div class="box-area">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/SVRGtzSj7uM"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+
+    <div class="container fourth-sec">
+        <div class="img-section">
+            <img src="handmade-home.png" alt="">
+        </div>
+    </div>
+
+    <div class="container">
+        <p class="para1"><span class="span-p"><b>जीभेवर रेंगाळत राहणारी अस्सल देशी गावरान चव </b></span><br> डंकावर
+            कुटलेले हॅन्डमेड मसाले, माठातील गावरान लोणची, उखळावर कुटलेल्या चटण्या</p>
+    </div>
+
+    <div class=" footer-container">
+        <div class="container">
+
+
+            <div class="footer-content">
+                <div class="f-box footer-b-1">
+                    <b>
+                        <p>संत कृपा <br>महिला गृह उद्योग</p>
+                    </b>
+                    <div class="f-img">
+                        <img src="logo.png" alt="">
+                    </div>
+                    <b>
+                        <P>परंपरा पारंपारिक चवीची <br> १९९९ सालापासून</P>
+                    </b>
+                </div>
+                <div class="f-box footer-b-2">
+                    <h4>कॉर्पोरेट ऑफिस आणि फॅक्टरी</h4>
+                    <h2>संत कृपा महिला <br> गृह उद्योग</h2>
+                    <p>शशिकांत कोंढरे इंडस्ट्रियल इस्टेट, आंबेगांव गायमुख,<br> दळवीनगर, आंबेगांव बु. पुणे ४११०४६.
+                        महाराष्ट्र <br>
+                        टोल फ्री नं : 18001-218-218<br> customercare.smgu@gmail.com</p>
+
+                </div>
+                <div class="f-box f-link footer-b-3">
+                    <div class="footer-link">
+                        <h5>लिंक्स<div class="underline"><span></span></div>
+                        </h5>
+                        <ul>
+                            <li><a href="कॅन्सलआणिरिटर्नपोलिसी.html">कॅन्सल आणि रिटर्न पोलिसी </a></li>
+                            <li><a href="डिलिव्हरी-पोलिसी.html">डिलिव्हरी पोलिसी </a></li>
+                            <li><a href="टर्म्सअँडकंडिशन.html">टर्म्स अँड कंडिशन </a></li>
+                            <li><a href="प्रायव्हसीपोलिसी.html">प्रायव्हसी पोलिसी </a></li>
+                            <li><a href="https://handmademasale.com/website_assets/license.pdf">लाइसेंस</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="f-box last-f-box footer-b-4">
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/handmademasale" target="_blank"><i
+                                class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://www.instagram.com/handmademasale/" target="_blank"><i
+                                class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+    </div>
+    <div class="last-footer">
+        <div class="container">
+            <p>&copy; 2022 SKMGU. All Rights Reserved.</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script>
+        let navlist = document.getElementById("navlist");
+
+        function openmenu() {
+            navlist.style.left = "0px";
+        }
+        function closemenu() {
+            navlist.style.left = "-250px"
+        }
+    </script>
+
+    <!-- dropdown scrip=>  -->
+
+    <script>
+        let langWrap = document.getElementById("lang-wrap");
+        let socialBtn = document.getElementById("social-btn");
+
+        function opendrop() {
+            langWrap.classList.toggle("active");
+            socialBtn.classList.toggle("active")
+        } 
+    </script>
+
+    <!--mobile dropdown scrip=>  -->
+
+    <script>
+        let langWrapA = document.getElementById("lang-wrap-a");
+
+        let socialBtnA = document.getElementById("social-btn-a");
+
+
+
+        function openMenu() {
+            langWrapA.classList.toggle("acti")
+            socialBtnA.classList.toggle("acti")
+        } 
+    </script>
+
+
+    <!-- mobile view menu dropdown  -->
+    <script>
+        let aboutdrop = document.getElementById("about-drop");
+        let abwrap = document.getElementById("ab-wrap");
+        let uparrow = document.getElementById("up-arrow");
+
+        aboutdrop.onclick = function () {
+            abwrap.classList.toggle("open")
+            uparrow.classList.toggle("open")
+        }
+
+    </script>
+
+
+
+
+
+
+
+
+    <!-- crousal script => -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+
+    <script>
+        $(".testmonial_slider_area").owlCarousel({
+            autoplay: true,
+            slideSpeed: 1000,
+            items: 3,
+            loop: true,
+            nav: true,
+            navText: ['<i class="fa-solid fa-chevron-left"></i>', '<i class="fa-solid fa-chevron-right"></i>'],
+            margin: 30,
+            // dots: true,
+            responsive: {
+                300: {
+                    items: 1
+                },
+                767: {
+                    items: 2
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+
+        });
+    </script>
+
+    <!-- <= end  -->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
